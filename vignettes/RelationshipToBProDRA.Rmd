@@ -1,0 +1,31 @@
+---
+title: "Relationship of lwrels to Baseball Prospectus' DRA"
+author: "Ben Dilday"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+In the last few weeks I've being doing in-depth studies of Baseball Prospectus' deserved run average (DRA). This has given me some ideas of things to study with the metric, different modeling choices to make, and different ways of presenting the results. The full definition of the model is still being developed, but some examples include.
+
+* Using many fewer outcomes. I'm currently using 6 where DRA has 24.
+
+* Using different sets of predictors
+
+* Keeping the metrics on a linear weights scale instead of translating to an RA9 scale.
+
+* Using a multinomial model - with an explicit constraint to sum to 1 - in place of 24 binomial models.
+
+Some other directions I'm thinking of that haven't been implemented yet, 
+
+* Markov chain Monte Carlo methods for to estimate posterior probability distributions for model parameters
+
+* Multi-year park effects 
+
+* Multi-year correlations in player talent and explicit player-aging model
+
+These differences make what I'm doing and working with different enough from DRA that it's not accurate to refer to it as DRA. So I decided to create a new framework, `lwrels`, which is related to and inspired by DRA, but is an independent entity.
+
