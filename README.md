@@ -1,4 +1,4 @@
 # lwrels
 
-`lwrels` is a linear weighst based baseball metric. The definition is currently under development.
+`lwrels` is a linear weights based baseball metric. The definition is currently under development.
 

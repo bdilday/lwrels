@@ -9,11 +9,11 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-In the last few weeks I've being doing in-depth studies of Baseball Prospectus' deserved run average (DRA). This has given me some ideas of things to study with the metric, different modeling choices to make, and different ways of presenting the results. The full definition of the model is still being developed, but some examples include.
+In the last few weeks I've being doing in-depth studies of Baseball Prospectus' deserved run average (DRA). This has given me some ideas of things to study with the metric, different modeling choices to make, and different ways of presenting the results. Ideas I'm pursuing include,
 
 * Using many fewer outcomes. I'm currently using 6 where DRA has 24.
 
-* Using different sets of predictors
+* Using different sets of predictors than DRA does.
 
 * Keeping the metrics on a linear weights scale instead of translating to an RA9 scale.
 
